@@ -1,0 +1,48 @@
+body {
+    width: 100%;
+    background-color: #f5f4f4;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.head {
+    height: 41px;
+    background-color: #eeeeee;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d1 {
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+}
+
+.d1 a {
+    padding-right: 30px;
+    color: #959595;
+}
+
+.d1-1 {
+    display: flex;
+    width: 350px;
+    height: 15px;
+    font-size: 14px;
+    color: #959595;
+    line-height: 41px;
+    justify-content: space-between;
+}
+
+.d1-1 a {
+    color: #959595;
+}
+
+.d1-1 a:not(:last-child) {
+    margin-right: 30px;
+}
