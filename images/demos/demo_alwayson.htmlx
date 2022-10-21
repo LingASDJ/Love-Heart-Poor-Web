@@ -6,7 +6,7 @@
     <script src="../js/jquery-1.5.js" type="text/javascript"></script>
     <script src="../js/jquery.jqzoom-core.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="../css/jquery.jqzoom.css" type="text/css">
+    <link rel="stylesheet" href="/css/jquery.jqzoom.css" type="text/css">
     <style type"text/css"> body{margin:0px;padding:0px;font-family:Arial;} a img,:link img,:visited img { border: none;
         } table { border-collapse: collapse; border-spacing: 0; } :focus { outline: none; } *{margin:0;padding:0;} p,
         blockquote, dd, dt{margin:0 0 8px 0;line-height:1.5em;} fieldset
