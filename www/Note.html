@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>在线留言</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+
+<!-- Valine技术，高级留言 -->
+<!-- do not set the version number -->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<!-- or set latest -->
+<script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+<!-- or Default value -->
+<script src="//unpkg.com/valine"></script>
+
+<link rel="stylesheet" href="../css/index.css"/>
+<link rel="stylesheet" href="../css/public.css"/>
+<link rel="stylesheet" href="../css/reset.css"> 
+<link rel="stylesheet" href="../css/all.css">
+<link rel="stylesheet" href="../css/test.css">
+<!-- <link rel="stylesheet" href="../css/help.css"> -->
+
+<!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
+<script src="../js/jquery-3.6.0.min.js"></script>
+<!-- 公共的JQ模块代码 -->
+<script src="../js/main_public.js"></script>
+
+<!-- 公共的纯JS模块代码 -->
+<script src="../js/main_index.js"></script>
+</head>
+<body>
+<div id="main">
+    <style>
+        /* .initio-1 li:nth-child(3) a {
+        background-color: #fff;
+        color: #3a880e;
+        font-weight: bold;
+        display: block;
+        } */
+        .toplingx img {
+        height: 40px;
+        width: 140px;
+        display: none;
+        }
+        .form-1 {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        }
+        </style>
+        <!--公共头部区域-->
+        <div class="toplingx" id="gotop">
+            <a href="">
+                <!-- 通过Null图像进行外部调整-->
+                <img src="../img/Null.png" alt="">
+                <div class="topling">
+                    <text id="goback">回到顶部</text>
+                    <i class="fa fa-paper-plane-o"></i>
+                </div>
+            </a>
+        </div>
+        
+        <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
+        <div class="head" id="top">
+            <div class="container one">
+                <div class="d1">
+                    <a href="javascript:void(0);">亲，请登录</a>
+                    <a href="javascript:void(0);">免费注册</a>
+                </div>
+                <div class="d1-1">
+                    <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
+                    <a href="javascript:void(0);"><i class="fa fa-shopping- cart"></i></a>
+                    <a href="javascript:void(0);">个人中心 </a>
+                    <a href="javascript:void(0);">切换账号</a>
+                    <a href="javascript:void(0);">退出账号</a>
+                </div>
+            </div>
+        </div>
+        <!--中间的搜索部分-->
+        <!-- 置顶---JQ效果-->
+        <header class="container two ling">
+            <div class="logo">
+                <img src="../img/logot.png" alt="">
+            </div>
+            <div class="form">
+                <!--required 属性是一个布尔属性。required 属性规定必需在提交表单之前填写输入字段。-->
+                <input type="text" required>
+                <div class="suosou">
+                    <i class="fa fa-search"></i>
+                    <span>安岳黄柠檬</span>
+                </div>
+                <a href="javascript:void(0);" class="a1">搜索</a>
+                <div class="logot">
+                    <img src="../img/Null.png" alt="">
+                </div>
+                <div class="form-1">
+                    <a href="">正宗土鸡蛋</a>
+                    <a href="javascript:void(0);">山东大白菜</a>
+                    <a href="javascript:void(0);">福建红心蜜柚</a>
+                    <a href="javascript:void(0);">四川猕猴桃</a>
+                    <a href="javascript:void(0);">新疆哈密瓜</a>
+                    <a href="javascript:void(0);">云南金凤梨</a>
+                </div>
+            </div>
+            <!--二维码区域-->
+            <div class="scan">
+                <i class="fa fa-qrcode"></i>
+            <a href="#">你好，欢迎来到留言板!</a>
+                <div class="img"></div>
+            </div>
+        </header>
+        <!-- 顶部导航栏 -->
+        <div class="three">
+            <div class="boxfixed">
+                <div class="content three-1">
+                    <div class="initio">
+                        <i class="fa fa-navicon"></i>
+                        <a>货品分类</a>
+                    </div>
+                    <div class="initio-1">
+                        <ul>
+                            <li>
+                                <a href="./index.html">首页</a>
+                            </li>
+                            <li>
+                                <a href="./purchasing.html">采购大厅</a>
+                            </li>
+                            <li>
+                                <a href="./helpsFarmers.html">爱心助农</a>
+                            </li>
+                            <li>
+                                <a href="./Information.html">农业资讯</a>
+                            </li>
+                            <li>
+                                <a href="./about.html">关于我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="initio-2">
+                        <i class="fa fa-shopping-cart"></i>
+                        <a>店长推荐</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="picture">
+            <img src="../img/lovetofarmer/bg.png" alt="">
+        </div>    
+	<div class="title">
+        <marquee>爱心助农-留言板-LOVE-我们需要听到你们的心声!</marquee>
+    </div>
+	<div id="vcomments"></div>
+
+    <script>
+
+        new Valine({
+            placeholder:'你的建议就是我们前进的动力，在这里留下你的心声，让爱心助农持续下去！(支持MD格式)',
+            el: '#vcomments',
+            avatar:'hide', // (''/mp/identicon/monsterid/wavatar/robohash/retro/hide),
+            appId: 'e3Ipwd8kr6LEeNRLk487mmtB-gzGzoHsz',    //这里填入leancloud的设置->应用keys中生成的对应值
+
+            appKey: 'gQYoj8j4KehzLWLGvpr5sKeP',  //这里填入leancloud的设置->应用keys中生成的对应值
+        })
+
+    </script>
+</div>
+<div class="footer">
+    <div class="footer-content">
+        <ul class="footer-nav">
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            关于我们</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            法律申明</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            使用协议</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            版权隐私</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            友情链接</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            成功案例</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">XX大事件</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            产品库</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            品种库</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            产品价格大全</a></li>
+            <li class="footer-nav-1">|</li>
+            <li class="footer-nav-1"><a href="javascript:void(0);">
+            产品地图</a></li>
+        </ul>
+        <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008- 8888
+        </p>
+        <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营 性-2019-0001 四川xx农产品网营业执照</p>
+        <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL Rights Reserved</p>
+    </div>
+</div>
+</body>
+</html>

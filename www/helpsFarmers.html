@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>美香稻-爱心助农</title>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/reset.css"> 
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/help.css">
+    <link rel="stylesheet" href="../fonts/font-awesome.min.css">
+
+    <!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <!-- 公共的JQ模块代码 -->
+    <script src="../js/main_public.js"></script>
+
+    <!-- 公共的纯JS模块代码 -->
+    <script src="../js/main_index.js"></script>
+
+
+</head>
+
+<body>
+    <style>
+    .initio-1 li:nth-child(3) a {
+    background-color: #fff;
+    color: #3a880e;
+    font-weight: bold;
+    display: block;
+    }
+    .toplingx img {
+    height: 40px;
+    width: 140px;
+    display: none;
+    }
+    .form-1 {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        }
+    </style>
+    <!--公共头部区域-->
+    <div class="toplingx" id="gotop">
+        <a href="">
+            <!-- 通过Null图像进行外部调整-->
+            <img src="../img/Null.png" alt="">
+            <div class="topling">
+                <text id="goback">回到顶部</text>
+                <i class="fa fa-paper-plane-o"></i>
+            </div>
+        </a>
+    </div>
+    
+    <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
+    <div class="head" id="top">
+        <div class="container one">
+            <div class="d1">
+                <a href="javascript:void(0);">亲，请登录</a>
+                <a href="javascript:void(0);">免费注册</a>
+            </div>
+            <div class="d1-1">
+                <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
+                <a href="javascript:void(0);"><i class="fa fa-shopping- cart"></i></a>
+                <a href="javascript:void(0);">个人中心 </a>
+                <a href="javascript:void(0);">切换账号</a>
+                <a href="javascript:void(0);">退出账号</a>
+            </div>
+        </div>
+    </div>
+    <!--中间的搜索部分-->
+    <!-- 置顶---JQ效果-->
+    <header class="container two ling">
+        <div class="logo">
+            <img src="../img/logot.png" alt="">
+        </div>
+        <div class="form">
+            <!--required 属性是一个布尔属性。required 属性规定必需在提交表单之前填写输入字段。-->
+            <input type="text" required>
+            <div class="suosou">
+                <i class="fa fa-search"></i>
+                <span>安岳黄柠檬</span>
+            </div>
+            <a href="javascript:void(0);" class="a1">搜索</a>
+            <div class="logot">
+                <img src="../img/Null.png" alt="">
+            </div>
+            <div class="form-1">
+                <a href="">正宗土鸡蛋</a>
+                <a href="javascript:void(0);">山东大白菜</a>
+                <a href="javascript:void(0);">福建红心蜜柚</a>
+                <a href="javascript:void(0);">四川猕猴桃</a>
+                <a href="javascript:void(0);">新疆哈密瓜</a>
+                <a href="javascript:void(0);">云南金凤梨</a>
+            </div>
+        </div>
+        <!--二维码区域-->
+        <div class="scan">
+            <i class="fa fa-qrcode"></i>
+            <a href="./Note.html">爱心助农-留言板</a>
+            <div class="img"></div>
+        </div>
+    </header>
+    <!-- 顶部导航栏 -->
+    <div class="three">
+        <div class="boxfixed">
+            <div class="content three-1">
+                <div class="initio">
+                    <i class="fa fa-navicon"></i>
+                    <a>货品分类</a>
+                </div>
+                <div class="initio-1">
+                    <ul>
+                        <li>
+                            <a href="./index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="./purchasing.html">采购大厅</a>
+                        </li>
+                        <li>
+                            <a href="./helpsFarmers.html">爱心助农</a>
+                        </li>
+                        <li>
+                            <a href="./Information.html">农业资讯</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">关于我们</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="initio-2">
+                    <i class="fa fa-shopping-cart"></i>
+                    <a>店长推荐</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- -------------------------banenr--------------------------- -->
+        <div class="picture">
+            <img src="../img/lovetofarmer/bg.png" alt="">
+        </div>
+       <!-- 爱心助力 -->
+       <div class="container lovef-title">
+        <h2>爱心助力</h2>
+        <span>多一个爱心，多一份担当，多一方温暖</span>
+    </div>
+    <div class="container slideshow">
+        <div class="details">
+            <img src="../img/lovetofarmer/cha.png" alt="">
+            <p>云南版纳茶区：市场疲软导致的茶叶滞销</p>
+            <p>从去年下半年我国茶叶不论在国内市场还是在国际市场上都出现了疲软、滞 销。出现了暂时产大于销......
+            </p>
+            <div class="d-plan">
+                <div></div>
+            </div>
+            <div class="d-data">
+                <div class="d-d-text">
+                    <p>10,021/件</p>
+                    <p>库存</p>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <img src="../img/lovetofarmer/dao.png" alt="">
+            <p>云南版纳茶区：市场疲软导致的茶叶滞销</p>
+            <p>从去年下半年我国茶叶不论在国内市场还是在国际市场上都出现了疲软、滞 销。出现了暂时产大于销......
+            </p>
+            <div class="d-plan">
+                <div></div>
+            </div>
+            <div class="d-data">
+                <div class="d-d-text">
+                    <p>10,021/件</p>
+                    <p>库存</p>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <img src="../img/lovetofarmer/mei.png" alt="">
+            <p>云南版纳茶区：市场疲软导致的茶叶滞销</p>
+            <p>从去年下半年我国茶叶不论在国内市场还是在国际市场上都出现了疲软、滞 销。出现了暂时产大于销......
+            </p>
+            <div class="d-plan">
+                <div></div>
+            </div>
+            <div class="d-data">
+                <div class="d-d-text">
+                    <p>10,021/件</p>
+                    <p>库存</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------滞销产品--------------------------- -->
+    <div class="finally container">
+        <div class="container f-content">
+            <div class="fc-picture">
+                <img src="../img/lovetofarmer/zhixiao.png" alt="">
+            </div>
+            <div class="fc-text">
+                <p class="fct-one">严重滞销</p>
+                <p class="fct-two">山西临县苹果</p>
+                <p class="fct-three">由于滞销的时间过长，果林里遍地都是苹果，加 上烂掉的苹果，导致了将近10万斤的损失，他们是偏远地区的农户，一两千元就能改变他们的命 运。
+                </p>
+                <div class="fc-plan">
+                    <div></div>
+                </div>
+                <div class="fct-data">
+                    <div class="fctd-text">
+                        <p>10,021/件</p>
+                        <p>库存</p>
+                    </div>
+                    <div class="fctd-text">
+                        <p>300</p>
+                        <p>助力人数</p>
+                    </div>
+                    <div class="fctd-text">
+                        <p>5000/件</p>
+                        <p>已售</p>
+                    </div>
+                </div>
+                <div class="fc-button">
+                    <div class="fcb-a">
+                        <a href="javascript:void(0);"><i class="fa fa-sellsy"></i>一键助力</a>
+                    </div>
+                    <div class="fcb-a-1">
+                        <a href="javascript:void(0);">
+                            <i class="fa fa-share-alt"></i> 一键分享
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 助力流程 -->
+    <div class="flow container">
+        <div class="container">
+            <h2>助力流程</h2>
+            <div class="flow-icon">
+                <img src="../img/lovetofarmer/icon1.png" alt="">
+                <img class="lctb" src="../img/lovetofarmer/形状2拷贝.png" alt="">
+                <img src="../img/lovetofarmer/icon2.png" alt="">
+                <img class="lctb" src="../img/lovetofarmer/形状2拷贝.png" alt="">
+                <img src="../img/lovetofarmer/icon3.png" alt="">
+                <img class="lctb" src="../img/lovetofarmer/形状2拷贝.png" alt="">
+                <img src="../img/lovetofarmer/icon4.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 滞销地区 -->
+    <div class="map">
+        <div class="container map-case">
+            <div class="map-text">
+                <h3>滞销地区</h3>
+                <p>随着扶贫力度的不断加强，农村地区的产业发展取得了很大的成绩,事实 上，随着农产品产量的不断增加，确实有一些贫困地区的农产品已经出现价格下跌、滞销甚至亏本的现 象，“运不出、卖不掉、价不高”是许多贫困地区农产品在销售环节上的共同烦恼。因此，从长期来看， 许多农产品的销路难问题可能会进一步凸显。确保贫困地区农产品产得出卖得出、产得好卖得好，要从 根本上强化市场导向，让农民跟着市场走。注重加强产销对接，着力解决产销脱节和卖难的问题
+                </p>
+            </div>
+            <div class="map-picture">
+                <img src="../img/lovetofarmer/重度滞销.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------合照图片--------------------------- -->
+    <div class="container tupian">
+        <img src="../img/lovetofarmer/display.png" alt="">
+    </div>
+    <!-- -------------------------长久以来，承蒙关照----------------------
+----- -->
+    <div class="t-background container">
+        <p>长久以来 承蒙关照</p>
+    </div>
+
+
+        <!-- ---底部声明 --- -->
+        <div class="footer">
+            <div class="footer-content">
+                <ul class="footer-nav">
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        关于我们</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        法律申明</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        使用协议</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        版权隐私</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        友情链接</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        成功案例</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a
+                            href="javascript:void(0);">XX大事件</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品库</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        品种库</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品价格大全</a></li>
+                    <li class="footer-nav-1">|</li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品地图</a></li>
+                </ul>
+                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008-
+                    8888</p>
+                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营
+                    性-2019-0001 四川xx农产品网营业执照</p>
+                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL
+                    Rights Reserved</p>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
