@@ -231,7 +231,11 @@
     width: 1200px;
     height: 240px;
     background-color: #222222;
+<<<<<<<< HEAD:css/help.css
     background-image: url(../img//lovetofarmer/main_bg_03.png);
+========
+    background-image: url(../images/lovetofarmer/main_bg_03.png);
+>>>>>>>> 50af355e34e4e8ac4e0af7ae7631e000205c970c:Test/乡村振兴，助农服务/乡村振兴，助农服务/HelpFarmersShop/css/helpsFarmers.css
 }
 
 .flow h2 {
@@ -305,7 +309,11 @@
 
 .t-background {
     height: 39px;
+<<<<<<<< HEAD:css/help.css
     background-image: url(../img//public/leaf1.png);
+========
+    background-image: url(../images/public/leaf1.png);
+>>>>>>>> 50af355e34e4e8ac4e0af7ae7631e000205c970c:Test/乡村振兴，助农服务/乡村振兴，助农服务/HelpFarmersShop/css/helpsFarmers.css
     text-align: center;
     background-repeat: no-repeat;
     margin-bottom: 47px;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        li {
+            float: left;
+            list-style: none;
+        }
+        
+        .box {
+            width: 700px;
+            overflow: hidden;
+            position: relative;
+            height: 360px;
+            margin-left: 300px;
+        }
+        
+        .box img {
+            width: 700px;
+            height: 360px;
+        }
+        
+        ul {
+            width: 2100px;
+            height: 360px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            animation: myanimation 8s infinite;
+        }
+        
+        @keyframes myanimation {
+            0%,
+            25% {
+                left: 0;
+            }
+            35%,
+            60% {
+                left: -700px;
+            }
+            70%,
+            90% {
+                left: -1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <ul>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/35a2239e10e392af73b6b7a737a039d6.jpg?w=632&h=340" alt="">
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50beb6e77e316ff0637d79ad1869572e.jpg?w=632&h=340" alt="">
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/816a66edef10673b4768128b41804cae.jpg?w=632&h=340" alt="">
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

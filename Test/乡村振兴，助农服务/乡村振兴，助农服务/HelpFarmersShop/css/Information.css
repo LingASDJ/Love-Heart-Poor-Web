@@ -1,0 +1,88 @@
+.initio-1 li:nth-child(4) a {
+    background-color: #fff;
+    color: #3a880e;
+    font-weight: bold;
+    display: block;
+}
+
+.initio-1 li:nth-child(1) a {
+    background-color: #3a880e;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+
+
+/*------------------------ banenr-------------------- */
+
+.picture {
+    overflow: hidden;
+    margin-bottom: 50px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.picture img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.picture img:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.zxzx {
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    width: 700px;
+}
+
+.zxzx .text-1 {
+    font-size: 16px;
+    color: rgb(160, 160, 160);
+}
+
+.zxzx .picture {
+    width: 500px;
+}
+
+.zxzx .text-1 span {
+    color: rgb(247, 130, 130);
+}
+
+.txt {
+    font-size: 24px;
+    color: rgb(102 102 102);
+}
+
+.gd {
+    width: 1200px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.gd span {
+    float: right;
+    color: rgb(247, 130, 130);
+}
+
+.rmtj {
+    display: flex;
+    margin: 0px 115px;
+}
+
+.rmtj .right {
+    width: 315px;
+}
+
+.nytp img {
+    width: 1200px;
+    margin: 0 auto;
+}
