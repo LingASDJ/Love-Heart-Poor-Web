@@ -29,16 +29,7 @@
 }
 
 
-/*------------------------ 关于我们-------------------- */
-
-.about {
-    width: 1199px;
-    height: 35px;
-    background-image: url(https://lingasdj.github.io/Love-Heart-Poor-Web/images/public/leaf1.png);
-    text-align: center;
-    line-height: 30px;
-    margin-bottom: 51px;
-}
+------------------------ 关于我们--------------------
 
 .about p {
     font-size: 32px;
@@ -113,10 +104,9 @@
 
 .image-1 {
     height: 180px;
-    background-color: #000000;
     margin-bottom: 50px;
-    background-image: url(https://lingasdj.github.io/Love-Heart-Poor-Web/images/aboutus/广告位.jpg);
-    position: relative;
+    background-image: url(../img/aboutus/广告位.jpg);
+    /* position: relative; */
 }
 
 .image-1 a {
@@ -195,11 +185,7 @@
 
 .print-1 i {
     scale: 3.2;
-    padding-top: 20px;
-}
-
-.print p {
-    padding-top: 30px;
+    /* padding-top: 3px; */
 }
 
 .iussue-box {
@@ -210,6 +196,25 @@
     flex-wrap: wrap;
 }
 
+.print p {
+    padding-top: 30px;
+}
+
+
 .answer {
     width: 555px;
+}
+
+.about {
+    width: 1199px;
+    height: 35px;
+    background-image: url(../img/public/leaf1.png);
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 51px;
+}
+
+.about p {
+    font-size: 32px;
+    color: #404040;
 }

@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'FontAwesome';
-    src: url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('https://lingasdj.github.io/Love-Heart-Poor-Web/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
     font-weight: normal;
     font-style: normal
 }
@@ -17,7 +17,8 @@
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 900;
 }
 
 .fa-lg {
@@ -368,7 +369,7 @@
 }
 
 .fa-qrcode:before {
-    content: "\f029"
+    content: "\f044"
 }
 
 .fa-barcode:before {
