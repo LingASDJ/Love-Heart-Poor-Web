@@ -2,7 +2,7 @@
 JDSA Ling-2022
 */ 
 window.onclick = function (ev) {
-    var clickTips = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善"];
+    var clickTips = ["爱心", "助农", "脱贫", "富裕", "友爱", "诚信"];
     var span = document.createElement('span');
     //随机显示文本处理 使用INNERTEXT显示 
     span.innerText = clickTips[parseInt(Math.random()*clickTips.length)];

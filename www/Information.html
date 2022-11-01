@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>美香稻爱心助农-农业咨询</title>
-    <!-- <link rel="stylesheet" href="../css/index.css"/> -->
-    <link rel="stylesheet" href="../css/public.css"/>
-    <!-- <link rel="stylesheet" href="../css/reset.css">  -->
+    <title>美香稻-农业咨询</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/purs.css">
     <link rel="stylesheet" href="../css/Information.css">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
+    <link rel="icon" href="../img/favicon.ico">
     <!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
     <script src="../js/jquery-3.6.0.min.js"></script>
 
@@ -26,47 +27,122 @@
 
 <body>
     <style>
-    .initio-1 li:nth-child(4) a {
-    background-color: #fff;
-    color: #3a880e;
-    font-weight: bold;
-    display: block;
-    }
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,a,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-    	padding: 0;
-    	border: 0;
-    	font-size: 100%;
-    	font: inherit;
-    	vertical-align: baseline;
-    }
-    * a{
-	text-decoration: none;
-    }
-    ol, ul {
-	list-style: none;
-    }
-    .form-1 {
-    position: absolute;
-    top: 36.5px;
-    left: 20px;
-    }
-    .toplingx img {
-        height: 40px;
-        width: 140px;
-        display: none;
-        }      
+        .initio-1 li:nth-child(4) a {
+            background-color: #fff;
+            color: #3a880e;
+            font-weight: bold;
+            display: block;
+        }
+        
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        a,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        
+        * a {
+            text-decoration: none;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        .form-1 {
+            position: absolute;
+            top: 36.5px;
+            left: 20px;
+        }
+        
+        .toplingx img {
+            height: 40px;
+            width: 140px;
+            display: none;
+        }
     </style>
     <!--公共头部区域-->
     <div class="toplingx" id="gotop">
@@ -79,13 +155,22 @@
             </div>
         </a>
     </div>
-    
+
     <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
     <div class="head" id="top">
         <div class="container one">
             <div class="d1">
                 <a href="javascript:void(0);">亲，请登录</a>
                 <a href="javascript:void(0);">免费注册</a>
+            </div>
+            <!-- 顶部滚动文字 -->
+            <div class="gd">
+                <marquee class="gdsz" direction="up" scrollamount="1px" scrolldelay="140">
+                    <p>扶贫攻坚发展产业，精准到户引领脱贫。</p>
+                    <p>先富帮后富，共走小康路。</p>
+                    <p>精准扶贫到户，发展产业脱贫。</p>
+                    <p>到户扶贫强基础，金融扶贫兴产业。</p>
+                </marquee>
             </div>
             <div class="d1-1">
                 <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
@@ -130,7 +215,7 @@
         </div>
     </header>
     <!-- 顶部导航栏 -->
-     <div class="three">
+    <div class="three">
         <div class="boxfixed">
             <div class="content three-1">
                 <div class="initio">
@@ -209,116 +294,114 @@
             <img src="../img/ny.png" alt="">
         </div>
     </div>
-            <!-- 绿色脚部 -->
-            <div class="green">
-                <div class="content green-info">
-                    <div class="green-1">
-                        <div class="top-green">
-                            <div class="brand">
-                                <i class="fa fa-leaf"></i>
-                                <p class="font">绿色</p>
-                            </div>
-                        </div>
-                        <div class="text-info">
-                            <p class="green-text">xx农产网是一家专注于绿色有机农产品 的专业服务网
-                            </p>
-                        </div>
-                    </div>
-                    <div class="green-1">
-                        <div class="top-green">
-                            <div class="brand">
-                                <i class="fa fa-cloud"></i>
-                                <p class="font">智能</p>
-                            </div>
-                        </div>
-                        <div class="text-info">
-                            <p class="green-text">xx专注于满足市场需求不断拓展服务区 域
-                            </p>
-                        </div>
-                    </div>
-                    <div class="green-1">
-                        <div class="top-green">
-                            <div class="brand">
-                                <i class="fa fa-hand-pointer"></i>
-                                <p class="font">实惠</p>
-                            </div>
-                        </div>
-                        <div class="text-info">
-                            <p class="green-text">没有中间商，免除差价让交易更加简单
-                            </p>
-                        </div>
-                    </div>
-                    <div class="green-1">
-                        <div class="top-green">
-                            <div class="brand">
-                                <i class="fa fa-check-square"></i>
-                                <p class="font">安全</p>
-                            </div>
-                        </div>
-                        <div class="text-info">
-                            <p class="green-text">实名认证登录、注册专业渠道让交易更加 有保障
-                            </p>
-                        </div>
-                    </div>
-                    <div class="green-1">
-                        <div class="top-green">
-                            <div class="brand">
-                                <i class="fa fa-desktop"></i>
-                                <p class="font">便捷</p>
-                            </div>
-                        </div>
-                        <div class="text-info">
-                            <p class="green-text">快速稳定的销往全国各地经销商 和个体 户
-                            </p>
-                        </div>
+    <!-- 绿色脚部 -->
+    <div class="green">
+        <div class="content green-info">
+            <div class="green-1">
+                <div class="top-green">
+                    <div class="brand">
+                        <i class="fa fa-leaf"></i>
+                        <p class="font">绿色</p>
                     </div>
                 </div>
-            </div>        
-        <!-- ---底部声明 --- -->
-        <div class="footer">
-            <div class="footer-content">
-                <ul class="footer-nav">
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        关于我们</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        法律申明</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        使用协议</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        版权隐私</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        友情链接</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        成功案例</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a
-                            href="javascript:void(0);">XX大事件</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        产品库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        品种库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        产品价格大全</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
-                        产品地图</a></li>
-                </ul>
-                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008-
-                    8888</p>
-                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营
-                    性-2019-0001 四川xx农产品网营业执照</p>
-                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL
-                    Rights Reserved</p>
+                <div class="text-info">
+                    <p class="green-text">xx农产网是一家专注于绿色有机农产品 的专业服务网
+                    </p>
+                </div>
+            </div>
+            <div class="green-1">
+                <div class="top-green">
+                    <div class="brand">
+                        <i class="fa fa-cloud"></i>
+                        <p class="font">智能</p>
+                    </div>
+                </div>
+                <div class="text-info">
+                    <p class="green-text">xx专注于满足市场需求不断拓展服务区 域
+                    </p>
+                </div>
+            </div>
+            <div class="green-1">
+                <div class="top-green">
+                    <div class="brand">
+                        <i class="fa fa-hand-pointer"></i>
+                        <p class="font">实惠</p>
+                    </div>
+                </div>
+                <div class="text-info">
+                    <p class="green-text">没有中间商，免除差价让交易更加简单
+                    </p>
+                </div>
+            </div>
+            <div class="green-1">
+                <div class="top-green">
+                    <div class="brand">
+                        <i class="fa fa-check-square"></i>
+                        <p class="font">安全</p>
+                    </div>
+                </div>
+                <div class="text-info">
+                    <p class="green-text">实名认证登录、注册专业渠道让交易更加 有保障
+                    </p>
+                </div>
+            </div>
+            <div class="green-1">
+                <div class="top-green">
+                    <div class="brand">
+                        <i class="fa fa-desktop"></i>
+                        <p class="font">便捷</p>
+                    </div>
+                </div>
+                <div class="text-info">
+                    <p class="green-text">快速稳定的销往全国各地经销商 和个体 户
+                    </p>
+                </div>
             </div>
         </div>
-</footer>
+    </div>
+    <!-- ---底部声明 --- -->
+    <div class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        关于我们</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        法律申明</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        使用协议</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        版权隐私</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        友情链接</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        成功案例</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">XX大事件</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品库</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        品种库</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品价格大全</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
+                        产品地图</a></li>
+            </ul>
+            <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008- 8888
+            </p>
+            <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营 性-2019-0001 四川xx农产品网营业执照</p>
+            <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL Rights Reserved</p>
+        </div>
+    </div>
+    </footer>
 </body>
+
 </html>

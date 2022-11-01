@@ -43,7 +43,7 @@ align-items
 
 .one {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .d1 {
@@ -120,6 +120,14 @@ body {
     box-sizing: border-box;
 }
 
+.gdsz {
+    width: 290px;
+    line-height: 18px;
+    height: 18px;
+    margin: 9.5px 0px;
+    color: #6a6969;
+}
+
 
 /*中间搜索部分-CSS*/
 
@@ -127,6 +135,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 64px;
 }
 
 .form {
@@ -177,10 +186,11 @@ body {
     width: 283px;
     height: 41px;
     background-color: #3a880e;
-    border-radius: 41px;
+    border-radius: 12px;
     text-align: center;
     line-height: 41px;
     color: white;
+    margin-top: -16px;
 }
 
 .scan a {
@@ -191,6 +201,7 @@ body {
 .logo img {
     width: 80px;
 }
+
 
 /* -------------------------绿色脚部---------------------------- */
 
@@ -251,7 +262,9 @@ body {
     height: 34px;
 }
 
+
 /*脚部的绿色文本区域*/
+
 .text-info .green-text {
     font-family: MicrosoftYaHeiLight, serif;
     font-size: 16px;
@@ -305,6 +318,7 @@ body {
 
 
 /* -----------------商品内容部分----------------- */
+
 
 /* .title {
     display: flex;
@@ -667,11 +681,11 @@ body {
 
 
 /* 鼠标动画 */
+
 @keyframes fadeOutUp {
     from {
         opacity: 1;
     }
-
     to {
         opacity: 0;
         transform: translate3d(0, -350%, 0);
@@ -686,13 +700,15 @@ body {
     font-size: 20px;
 }
 
-.myAnimate{
+.myAnimate {
     opacity: 0;
     transform: translateX(50px)
 }
 
+
 /* 回到顶部 */
-#goback{
+
+#goback {
     font-size: 20px;
     color: #f5f4f4;
 }
@@ -712,7 +728,7 @@ body {
     font-size: 19px;
 }
 
-.toplingx{
+.toplingx {
     font-size: 20px;
     color: rgb(248, 158, 13);
     /* position: absolute; */
@@ -724,7 +740,9 @@ body {
     border-radius: 50%;
 }
 
+
 /* 农业咨询 */
+
 .far_question {
     display: flex;
     background: url(../img/index/footer/footer.png) no-repeat center;
@@ -744,6 +762,7 @@ body {
 
 .container h2 {
     margin-top: 20px;
+    color: #404040;
 }
 
 .consulting h2 {
@@ -849,6 +868,7 @@ text-overflow: ellipsis;
     background-color: #fff;
 }
 
+
 /* 顶部导航栏 */
 
 .form-1 a {
@@ -870,9 +890,16 @@ text-overflow: ellipsis;
     font-size: 18px;
 }
 
+
 /*.boxfixed{*/
+
+
 /*    width:100%;*/
+
+
 /*    background-color: #3a880e;*/
+
+
 /*}*/
 
 .content {
@@ -913,7 +940,9 @@ text-overflow: ellipsis;
     float: left;
 }
 
+
 /* 导航栏的浮动 */
+
 .initio-1 li a:hover {
     background-color: #fff;
     color: #3a880e;

@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>美香稻爱心助农-采购大厅</title>
-    <link rel="stylesheet" href="../css/index.css"/>
-    <link rel="stylesheet" href="../css/public.css"/>
-    <link rel="stylesheet" href="../css/reset.css"> 
+    <title>美香稻-采购大厅</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/purs.css">
-
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
 
     <!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
@@ -28,23 +28,25 @@
 <body>
     <style>
         .initio-1 li:nth-child(2) a {
-        background-color: #fff;
-        color: #3a880e;
-        font-weight: bold;
-        display: block;
+            background-color: #fff;
+            color: #3a880e;
+            font-weight: bold;
+            display: block;
         }
+        
         .toplingx img {
-        height: 40px;
-        width: 140px;
-        display: none;
-        z-index:99;
+            height: 40px;
+            width: 140px;
+            display: none;
+            z-index: 99;
         }
+        
         .form-1 {
-        position: absolute;
-        top: 40px;
-        left: 20px;
+            position: absolute;
+            top: 40px;
+            left: 20px;
         }
-        </style>
+    </style>
     <!--公共头部区域-->
     <div class="toplingx" id="gotop">
         <a href="">
@@ -56,13 +58,22 @@
             </div>
         </a>
     </div>
-    
+
     <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
     <div class="head" id="top">
         <div class="container one">
             <div class="d1">
                 <a href="javascript:void(0);">亲，请登录</a>
                 <a href="javascript:void(0);">免费注册</a>
+            </div>
+            <!-- 顶部滚动文字 -->
+            <div class="gd">
+                <marquee class="gdsz" direction="up" scrollamount="1px" scrolldelay="140">
+                    <p>扶贫攻坚发展产业，精准到户引领脱贫。</p>
+                    <p>先富帮后富，共走小康路。</p>
+                    <p>精准扶贫到户，发展产业脱贫。</p>
+                    <p>到户扶贫强基础，金融扶贫兴产业。</p>
+                </marquee>
             </div>
             <div class="d1-1">
                 <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
@@ -144,15 +155,15 @@
     <div class="spjx">
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/长岛海米金钩.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>30.00</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>长岛淡晒海米金钩批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -161,15 +172,15 @@
         </div>
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/兴城多宝鱼.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>40.00</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>兴城多宝鱼批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -179,15 +190,15 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/东山岛鱿鱼.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>45.00</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>东山岛鱿鱼批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -197,15 +208,15 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/大连干海带.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>11.00</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>大连干海带批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -215,15 +226,15 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/陕西糯玉米.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>2.00</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>陕西糯玉米批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -233,15 +244,15 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/苍山牛蒡.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>3.50</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>苍山牛蒡批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -251,7 +262,7 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/四川脆李.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
                 <p class="nuber-1">￥<span>2.50</span>元/斤
@@ -259,7 +270,7 @@
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>四川青红脆李批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -269,15 +280,15 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/四川有机小青菜.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>1.80</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>四川有机小青菜批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -287,7 +298,7 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/四川西兰花.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
                 <p class="nuber-1">￥<span>2.50</span>元/斤
@@ -295,7 +306,7 @@
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>湖南有机西兰花批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
@@ -305,22 +316,22 @@
 
         <div class="right-img-3-1">
             <div class="img-3">
-                <a href="javascript:void(0);"><img src="../img/zjsp/福建蜜薯.jpg" alt=""></a>
+                <a href="javascript:void(0);"><img src="../img/zjsp/四川芦笋.jpg" alt=""></a>
             </div>
             <div class="img-nuber">
-                <p class="nuber-1">￥<span>2.50</span>元/斤
+                <p class="nuber-1">￥<span>8.50</span>元/斤
                 </p>
                 <p class="nuber-2">50斤起批</p>
             </div>
             <div class="img-text">
-                <p>福建六鳌沙地红蜜薯批发</p>
+                <p>河南新鲜芦笋批发</p>
             </div>
             <div class="img-text-1">
                 <p class="it-1">库存：2000斤</p>
                 <p class="it-2">经销批发</p>
             </div>
         </div>
-    </div>    
+    </div>
     <!-- 底部控制按钮 -->
     <div class="container page">
         <div class="up">
@@ -370,51 +381,49 @@
     </div>
 -->
 
-        <!-- ---底部声明 --- -->
-        <div class="footer">
-            <div class="footer-content">
-                <ul class="footer-nav">
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+    <!-- ---底部声明 --- -->
+    <div class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         关于我们</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         法律申明</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         使用协议</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         版权隐私</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         友情链接</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         成功案例</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a
-                            href="javascript:void(0);">XX大事件</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">XX大事件</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         品种库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品价格大全</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品地图</a></li>
-                </ul>
-                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008-
-                    8888</p>
-                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营
-                    性-2019-0001 四川xx农产品网营业执照</p>
-                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL
-                    Rights Reserved</p>
-            </div>
+            </ul>
+            <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008- 8888
+            </p>
+            <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营 性-2019-0001 四川xx农产品网营业执照</p>
+            <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL Rights Reserved</p>
         </div>
-</footer>
+    </div>
+    </footer>
 </body>
+
 </html>

@@ -62,11 +62,12 @@
     color: rgb(102 102 102);
 }
 
-.gd {
+
+/* .gd {
     width: 1200px;
     height: 20px;
     margin: 0 auto;
-}
+} */
 
 .gd span {
     float: right;
@@ -85,4 +86,14 @@
 .nytp img {
     width: 1200px;
     margin: 0 auto;
+}
+
+.lovef {
+    font-size: 32px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    color: #ff1818;
+    background: url(../img/public/leaf1.png) center no-repeat;
+    text-align: center;
+    margin-bottom: 25px;
 }

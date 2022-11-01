@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>美香稻-爱心助农</title>
-    <link rel="stylesheet" href="../css/index.css"/>
-    <link rel="stylesheet" href="../css/public.css"/>
-    <link rel="stylesheet" href="../css/reset.css"> 
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/help.css">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
-
+    <link rel="icon" href="../img/favicon.ico">
     <!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
     <script src="../js/jquery-3.6.0.min.js"></script>
 
@@ -26,21 +26,23 @@
 
 <body>
     <style>
-    .initio-1 li:nth-child(3) a {
-    background-color: #fff;
-    color: #3a880e;
-    font-weight: bold;
-    display: block;
-    }
-    .toplingx img {
-    height: 40px;
-    width: 140px;
-    display: none;
-    }
-    .form-1 {
-        position: absolute;
-        top: 40px;
-        left: 20px;
+        .initio-1 li:nth-child(3) a {
+            background-color: #fff;
+            color: #3a880e;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .toplingx img {
+            height: 40px;
+            width: 140px;
+            display: none;
+        }
+        
+        .form-1 {
+            position: absolute;
+            top: 40px;
+            left: 20px;
         }
     </style>
     <!--公共头部区域-->
@@ -54,13 +56,22 @@
             </div>
         </a>
     </div>
-    
+
     <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
     <div class="head" id="top">
         <div class="container one">
             <div class="d1">
                 <a href="javascript:void(0);">亲，请登录</a>
                 <a href="javascript:void(0);">免费注册</a>
+            </div>
+            <!-- 顶部滚动文字 -->
+            <div class="gd">
+                <marquee class="gdsz" direction="up" scrollamount="1px" scrolldelay="140">
+                    <p>扶贫攻坚发展产业，精准到户引领脱贫。</p>
+                    <p>先富帮后富，共走小康路。</p>
+                    <p>精准扶贫到户，发展产业脱贫。</p>
+                    <p>到户扶贫强基础，金融扶贫兴产业。</p>
+                </marquee>
             </div>
             <div class="d1-1">
                 <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
@@ -138,12 +149,12 @@
             </div>
         </div>
     </div>
-        <!-- -------------------------banenr--------------------------- -->
-        <div class="picture">
-            <img src="../img/lovetofarmer/bg.png" alt="">
-        </div>
-       <!-- 爱心助力 -->
-       <div class="container lovef-title">
+    <!-- -------------------------banenr--------------------------- -->
+    <div class="picture">
+        <img src="../img/lovetofarmer/bg.png" alt="">
+    </div>
+    <!-- 爱心助力 -->
+    <div class="container lovef-title">
         <h2>爱心助力</h2>
         <span>多一个爱心，多一份担当，多一方温暖</span>
     </div>
@@ -274,51 +285,49 @@
     </div>
 
 
-        <!-- ---底部声明 --- -->
-        <div class="footer">
-            <div class="footer-content">
-                <ul class="footer-nav">
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+    <!-- ---底部声明 --- -->
+    <div class="footer">
+        <div class="footer-content">
+            <ul class="footer-nav">
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         关于我们</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         法律申明</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         使用协议</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         版权隐私</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         友情链接</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         成功案例</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a
-                            href="javascript:void(0);">XX大事件</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">XX大事件</a></li>
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         品种库</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品价格大全</a></li>
-                    <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a href="javascript:void(0);">
+                <li class="footer-nav-1">|</li>
+                <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品地图</a></li>
-                </ul>
-                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008-
-                    8888</p>
-                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营
-                    性-2019-0001 四川xx农产品网营业执照</p>
-                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL
-                    Rights Reserved</p>
-            </div>
+            </ul>
+            <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008- 8888
+            </p>
+            <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营 性-2019-0001 四川xx农产品网营业执照</p>
+            <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL Rights Reserved</p>
         </div>
-</footer>
+    </div>
+    </footer>
 </body>
+
 </html>

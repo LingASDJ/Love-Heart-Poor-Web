@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <title>美香稻爱心助农</title>
-    <link rel="stylesheet" href="../css/index.css"/>
-    <link rel="stylesheet" href="../css/public.css"/>
-    <link rel="stylesheet" href="../css/reset.css"> 
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/public.css" />
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../css/test.css">
-
+    <link rel="icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
 
     <!-- 确保JQ在最上面被加载，否则将会出现错误：$ is not defined -->
@@ -30,85 +30,93 @@
 <body>
     <style>
         .initio-1 li:nth-child(1) a {
-        background-color: #fff;
-        color: #3a880e;
-        font-weight: bold;
-        display: block;
+            background-color: #fff;
+            color: #3a880e;
+            font-weight: bold;
+            display: block;
         }
-
         /* 调用ToplingX的图形 */
+        
         .toplingx img {
-        height: 40px;
-        width: 140px;
-        display: none;
-        z-index:99;
+            height: 40px;
+            width: 140px;
+            display: none;
+            z-index: 99;
         }
-
-      html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
     <!--公共头部区域-->
     <div class="toplingx" id="gotop">
-    <a href="">
-        <!-- 通过Null图像进行外部调整-->
-        <img src="../img/Null.png" alt="">
-        <div class="topling">
-            <text id="goback">回到顶部</text>
-            <i class="fa fa-paper-plane-o"></i>
-        </div>
-    </a>
+        <a href="">
+            <!-- 通过Null图像进行外部调整-->
+            <img src="../img/Null.png" alt="">
+            <div class="topling">
+                <text id="goback">回到顶部</text>
+                <i class="fa fa-paper-plane-o"></i>
+            </div>
+        </a>
     </div>
-    
+
     <!-- gotop为锚点标记，并且通过隐藏的TopLing来触发，而TopLing是通过JQ模块处理 -->
     <div class="head" id="top">
         <div class="container one">
             <div class="d1">
                 <a href="javascript:void(0);">亲，请登录</a>
                 <a href="javascript:void(0);">免费注册</a>
+            </div>
+            <!-- 顶部滚动文字 -->
+            <div class="gd">
+                <marquee class="gdsz" direction="up" scrollamount="1px" scrolldelay="140">
+                    <p>扶贫攻坚发展产业，精准到户引领脱贫。</p>
+                    <p>先富帮后富，共走小康路。</p>
+                    <p>精准扶贫到户，发展产业脱贫。</p>
+                    <p>到户扶贫强基础，金融扶贫兴产业。</p>
+                </marquee>
             </div>
             <div class="d1-1">
                 <a href="javascript:void(0);"><i class="fa fa-github-alt"> </i></a>
@@ -125,7 +133,7 @@
         <div class="logo">
             <img src="../img/logot.png" alt="">
         </div>
-        
+
         <div class="form">
             <!--required 属性是一个布尔属性。required 属性规定必需在提交表单之前填写输入字段。-->
             <input type="text" required>
@@ -194,7 +202,7 @@
         <!-- banner轮播图 -->
         <ul class="slides">
             <li style="background:url('../img/index/banner/banner2.png') center" id="guang"></li>
-          </ul>
+        </ul>
         <!-- banner内容 -->
         <div class="background container">
             <div class="container centerbox">
@@ -279,7 +287,7 @@
     </div>
     <!--产品展示部分-->
     <div class="container showpro">
-        <h2>产品展示</h2>
+        <h2>产/品/展/示</h2>
         <div class="showpro-img">
             <div class="showpro-img-single">
                 <img src="../img/zjsp/安徽嫩笋.jpg" alt="">
@@ -321,8 +329,7 @@
                 <div class="z-dl-head-l">
                     <p>新鲜水果</p>
 
-                    <a href="javascript:;" class="more-arr-more"
-                        >更多
+                    <a href="javascript:;" class="more-arr-more">更多
                         <div class="arr-an-more">
                             <p class="arr-an">></p>
                             <p class="arr-an">></p>
@@ -336,330 +343,322 @@
                         <p>热卖品种</p>
                         <p>产地货源</p>
                         <a href="">立即进入&gt;</a>
-                    </div>
-                    <div class="z-dl-right">
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/1.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/2.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/3.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/4.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="title-head">
-            <div class="z-dl-head">
-                <div class="z-dl-head-l">
-                    <p>新鲜水果</p>
-
-                    <a href="javascript:;" class="more-arr-more"
-                        >更多
-                        <div class="arr-an-more">
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                        </div></a
-                    >
-                </div>
-                <div class="z-dl">
-                    <div class="z-dl-left">
-                        <h4>水果批发</h4>
-                        <p>热卖品种</p>
-                        <p>产地货源</p>
-                        <a href="">立即进入&gt;</a>
-                    </div>
-                    <div class="z-dl-right">
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/1.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                <div class="z-dl-right">
+                    <div class="right_pro-l">
+                        <div class="imgbox">
+                            <img src="../img/index/display/fruit/1.png" alt="" />
                         </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/2.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/3.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/4.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                        <div class="right_pro_l_l">
+                            <div class="right_pro-price1">￥2.6</div>
+                            <div class="right_pro-price2">￥3.6</div>
+                            <p>安岳新鲜黄柠檬</p>
+                            <span>精品</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="title-head">
-            <div class="z-dl-head">
-                <div class="z-dl-head-l">
-                    <p>新鲜水果</p>
-
-                    <a href="javascript:;" class="more-arr-more"
-                        >更多
-                        <div class="arr-an-more">
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                        </div></a
-                    >
-                </div>
-                <div class="z-dl">
-                    <div class="z-dl-left">
-                        <h4>水果批发</h4>
-                        <p>热卖品种</p>
-                        <p>产地货源</p>
-                        <a href="">立即进入&gt;</a>
-                    </div>
-                    <div class="z-dl-right">
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/1.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                    <div class="right_pro-l">
+                        <div class="imgbox">
+                            <img src="../img/index/display/fruit/2.png" alt="">
                         </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/2.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/3.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/4.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                        <div class="right_pro_l_l">
+                            <div class="right_pro-price1">￥4.6</div>
+                            <div class="right_pro-price2">￥5.6</div>
+                            <p>福建红心蜜柚</p>
+                            <span>精品</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="title-head">
-            <div class="z-dl-head">
-                <div class="z-dl-head-l">
-                    <p>新鲜水果</p>
-
-                    <a href="javascript:;" class="more-arr-more"
-                        >更多
-                        <div class="arr-an-more">
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                            <p class="arr-an">></p>
-                        </div></a
-                    >
-                </div>
-                <div class="z-dl">
-                    <div class="z-dl-left">
-                        <h4>水果批发</h4>
-                        <p>热卖品种</p>
-                        <p>产地货源</p>
-                        <a href="">立即进入&gt;</a>
+                    <div class="right_pro-l">
+                        <div class="imgbox">
+                            <img src="../img/index/display/fruit/3.png" alt="">
+                        </div>
+                        <div class="right_pro_l_l">
+                            <div class="right_pro-price1">￥1.6</div>
+                            <div class="right_pro-price2">￥2.6</div>
+                            <p>天水花牛苹果</p>
+                            <span>精品</span>
+                        </div>
                     </div>
-                    <div class="z-dl-right">
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/1.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                    <div class="right_pro-l">
+                        <div class="imgbox">
+                            <img src="../img/index/display/fruit/4.png" alt="">
                         </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/2.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/3.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
-                        </div>
-                        <div class="right_pro-l">
-                            <div class="imgbox">
-                                <img src="../img/index/display/fruit/4.png" alt="" />
-                            </div>
-                            <div class="right_pro_l_l">
-                                <div class="right_pro-price1">￥2.6</div>
-                                <div class="right_pro-price2">￥3.6</div>
-                                <p>安岳新鲜黄柠檬</p>
-                                <span>精品</span>
-                            </div>
+                        <div class="right_pro_l_l">
+                            <div class="right_pro-price1">￥5.6</div>
+                            <div class="right_pro-price2">￥7.6</div>
+                            <p>红心猕猴桃</p>
+                            <span>精品</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- ----------------农业咨询---------------- -->
-<div class="far_question">
-    <div class="container consulting">
-        <h2>农/业/咨/询</h2>
-        <div class="news">
-            <div class="news-item">
-                <div class="ni-icon">
-                    <i class="fa fa-newspaper-o"></i>
+    <div class="title-head">
+        <div class="z-dl-head">
+            <div class="z-dl-head-l">
+                <p>新鲜蔬菜</p>
+
+                <a href="javascript:;" class="more-arr-more">更多
+                        <div class="arr-an-more">
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                        </div></a
+                    >
                 </div>
-                <div class="ni-img">
-                    <img src="../img/news/index/1.png" alt="" />
+                <div class="z-dl">
+                    <div class="z-dl-left">
+                        <h4>蔬菜批发</h4>
+                        <p>热卖品种</p>
+                        <p>产地货源</p>
+                        <a href="">立即进入&gt;</a>
+            </div>
+            <div class="z-dl-right">
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/vegetables/1.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥2.5</div>
+                        <div class="right_pro-price2">￥3.5</div>
+                        <p>东北糯玉米</p>
+                        <span>精品</span>
+                    </div>
                 </div>
-                <div class="nic-text">
-                    <h3>最新资讯</h3>
-                    <a href="javascript:void(0);" class="nict-title"
-                        >苋菜价格多少钱一斤？苋菜种植有什么困难，种就完事了。</a
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/vegetables/2.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥8.5</div>
+                        <div class="right_pro-price2">￥9.8</div>
+                        <p>进口新鲜甜椒</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/vegetables/3.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥0.8</div>
+                        <div class="right_pro-price2">￥1.2</div>
+                        <p>甘肃板栗南瓜</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/vegetables/4.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥1.2</div>
+                        <div class="right_pro-price2">￥1.6</div>
+                        <p>山东大白菜</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="title-head">
+        <div class="z-dl-head">
+            <div class="z-dl-head-l">
+                <p>新鲜肉类</p>
+                <a href="javascript:;" class="more-arr-more">更多
+                        <div class="arr-an-more">
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                        </div></a
+                    >
+                </div>
+                <div class="z-dl">
+                    <div class="z-dl-left">
+                        <h4>肉类批发</h4>
+                        <p>生态放养</p>
+                        <p>农场直销</p>
+                        <a href="">立即进入&gt;</a>
+            </div>
+            <div class="z-dl-right">
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/feat/1.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥2.6</div>
+                        <div class="right_pro-price2">￥3.6</div>
+                        <p>新鲜鸡蛋</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/feat/2.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥4.6</div>
+                        <div class="right_pro-price2">￥5.6</div>
+                        <p>新鲜猪里脊肉</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/feat/3.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥14.6</div>
+                        <div class="right_pro-price2">￥17.6</div>
+                        <p>安岳新鲜黄鸡</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/feat/4.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥23.6</div>
+                        <div class="right_pro-price2">￥29.6</div>
+                        <p>四川新鲜鸡腿</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="title-head">
+        <div class="z-dl-head">
+            <div class="z-dl-head-l">
+                <p>新鲜水产</p>
+                <a href="javascript:;" class="more-arr-more">更多
+                        <div class="arr-an-more">
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                            <p class="arr-an">></p>
+                        </div></a
+                    >
+                </div>
+                <div class="z-dl">
+                    <div class="z-dl-left">
+                        <h4>水产批发</h4>
+                        <p>新鲜水产</p>
+                        <p>冷链直达</p>
+                        <a href="">立即进入&gt;</a>
+            </div>
+            <div class="z-dl-right">
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/water/1.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥22.6</div>
+                        <div class="right_pro-price2">￥33.6</div>
+                        <p>青岛新鲜大虾</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/water/2.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥42.6</div>
+                        <div class="right_pro-price2">￥53.6</div>
+                        <p>阳澄湖大闸蟹</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/water/3.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥50.6</div>
+                        <div class="right_pro-price2">￥63.6</div>
+                        <p>优质金鲳鱼</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+                <div class="right_pro-l">
+                    <div class="imgbox">
+                        <img src="../img/index/display/water/4.png" alt="">
+                    </div>
+                    <div class="right_pro_l_l">
+                        <div class="right_pro-price1">￥12.6</div>
+                        <div class="right_pro-price2">￥23.6</div>
+                        <p>地八鲜乳山生蚝</p>
+                        <span>精品</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- ----------------农业咨询---------------- -->
+    <div class="far_question">
+        <div class="container consulting">
+            <h2>农/业/咨/询</h2>
+            <div class="news">
+                <div class="news-item">
+                    <div class="ni-icon">
+                        <i class="fa fa-newspaper-o"></i>
+                    </div>
+                    <div class="ni-img">
+                        <img src="../img/news/index/1.png" alt="" />
+                    </div>
+                    <div class="nic-text">
+                        <h3>最新资讯</h3>
+                        <a href="javascript:void(0);" class="nict-title">苋菜价格多少钱一斤？苋菜种植有什么困难，种就完事了。</a
                     >
                     <a href="javascript:void(0);" class="nict-title"
                         >进口辣椒优质品种今日正式起售，大家快来抢购，欲购从速。</a
                     >
                     <a href="javascript:void(0);" class="nict-more">更多&gt;&gt;</a>
+                    </div>
                 </div>
-            </div>
-            <div class="news-item">
-                <div class="ni-icon">
-                    <i class="fa fa-newspaper-o"></i>
-                </div>
-                <div class="ni-img">
-                    <img src="../img/news/index/1.png" alt="" />
-                </div>
-                <div class="nic-text">
-                    <h3>行业资讯</h3>
-                    <a href="javascript:void(0);" class="nict-title"
-                        >哪个品种的西瓜最甜？常见优质有什么困难，种就完事了。</a
+                <div class="news-item">
+                    <div class="ni-icon">
+                        <i class="fa fa-newspaper-o"></i>
+                    </div>
+                    <div class="ni-img">
+                        <img src="../img/news/index/1.png" alt="" />
+                    </div>
+                    <div class="nic-text">
+                        <h3>行业资讯</h3>
+                        <a href="javascript:void(0);" class="nict-title">哪个品种的西瓜最甜？常见优质有什么困难，种就完事了。</a
                     >
                     <a href="javascript:void(0);" class="nict-title"
                         >海蟹死了还能不能吃？海蟹的营养大家快来抢购，欲购从速。</a
                     >
                     <a href="javascript:void(0);" class="nict-more">更多&gt;&gt;</a>
+                    </div>
                 </div>
-            </div>
-            <div class="news-item">
-                <div class="ni-icon">
-                    <i class="fa fa-newspaper-o"></i>
-                </div>
-                <div class="ni-img">
-                    <img src="../img/news/index/1.png" alt="" />
-                </div>
-                <div class="nic-text">
-                    <h3>农业学堂</h3>
-                    <a href="javascript:void(0);" class="nict-title"
-                        >提高辣椒产量需要掌握的施肥技术，有什么困难，种就完事了。</a
+                <div class="news-item">
+                    <div class="ni-icon">
+                        <i class="fa fa-newspaper-o"></i>
+                    </div>
+                    <div class="ni-img">
+                        <img src="../img/news/index/1.png" alt="" />
+                    </div>
+                    <div class="nic-text">
+                        <h3>农业学堂</h3>
+                        <a href="javascript:void(0);" class="nict-title">提高辣椒产量需要掌握的施肥技术，有什么困难，种就完事了。</a
                     >
                     <a href="javascript:void(0);" class="nict-title"
                         >羊梭菌病通常是什么原因，大家快来抢购，欲购从速。来来来</a
                     >
                     <a href="javascript:void(0);" class="nict-more">更多&gt;&gt;</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!--绿色脚部-->
+    <!--绿色脚部-->
     <footer>
         <div class="green">
             <div class="container green-info">
@@ -671,8 +670,8 @@
                         </div>
                     </div>
                     <div class="text-info">
-                        <p class="green-text">xx农产网是一家专注于绿色有机农产品
-                            的专业服务网</p>
+                        <p class="green-text">xx农产网是一家专注于绿色有机农产品 的专业服务网
+                        </p>
                     </div>
                 </div>
                 <div class="green-1">
@@ -683,8 +682,8 @@
                         </div>
                     </div>
                     <div class="text-info">
-                        <p class="green-text">xx专注于满足市场需求不断拓展服务区
-                            域</p>
+                        <p class="green-text">xx专注于满足市场需求不断拓展服务区 域
+                        </p>
                     </div>
                 </div>
                 <div class="green-1">
@@ -707,8 +706,8 @@
                         </div>
                     </div>
                     <div class="text-info">
-                        <p class="green-text">实名认证登录、注册专业渠道让交易更加
-                            有保障</p>
+                        <p class="green-text">实名认证登录、注册专业渠道让交易更加 有保障
+                        </p>
                     </div>
                 </div>
                 <div class="green-1">
@@ -719,8 +718,8 @@
                         </div>
                     </div>
                     <div class="text-info">
-                        <p class="green-text">快速稳定的销往全国各地经销商 和个体
-                            户</p>
+                        <p class="green-text">快速稳定的销往全国各地经销商 和个体 户
+                        </p>
                     </div>
                 </div>
             </div>
@@ -747,8 +746,7 @@
                     <li class="footer-nav-1"><a href="javascript:void(0);">
                         成功案例</a></li>
                     <li class="footer-nav-1">|</li>
-                    <li class="footer-nav-1"><a
-                            href="javascript:void(0);">XX大事件</a></li>
+                    <li class="footer-nav-1"><a href="javascript:void(0);">XX大事件</a></li>
                     <li class="footer-nav-1">|</li>
                     <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品库</a></li>
@@ -762,16 +760,17 @@
                     <li class="footer-nav-1"><a href="javascript:void(0);">
                         产品地图</a></li>
                 </ul>
-                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008-
-                    8888</p>
-                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营
-                    性-2019-0001 四川xx农产品网营业执照</p>
-                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL
-                    Rights Reserved</p>
+                <p class="footer-font">蜀ICP备12345678号-1 服务热线：400-008- 8888
+                </p>
+                <p class="footer-font">互联网农产品信息服务资格证书：（蜀）- 经营 性-2019-0001 四川xx农产品网营业执照</p>
+                <p class="footer-font">&copy;-2019 Cnhnb B2B SYSTEN ALL Rights Reserved</p>
             </div>
         </div>
-        <div class="cd-cover-layer"></div> <!-- this is the cover layer -->
-        <div class="cd-loading-bar"></div> <!-- this is the loading bar -->
-</footer>
+        <div class="cd-cover-layer"></div>
+        <!-- this is the cover layer -->
+        <div class="cd-loading-bar"></div>
+        <!-- this is the loading bar -->
+    </footer>
 </body>
+
 </html>
